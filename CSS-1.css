@@ -13,5 +13,8 @@ h3 {
 hr{
     border-color: white;
     border-style: dotted;
-    
+    width: 25px;
+}
+*{
+    align-self: center;
 }
