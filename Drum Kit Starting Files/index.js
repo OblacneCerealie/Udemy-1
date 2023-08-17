@@ -1,13 +1,7 @@
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 
-
-
-
-
-
 //detecting button press
-
 
 for (var i = 0; i<numberOfDrumButtons; i++){
     
@@ -15,7 +9,7 @@ for (var i = 0; i<numberOfDrumButtons; i++){
 
         var buttonInnerHtml = this.innerHTML;
 
-        AudioPlay(buttonInneHtml)
+        AudioPlay(buttonInnerHtml)
         
     });
 
