@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+
+
+
+
+
+
+
+<h1>What are you going to do today?</h1>
+<form action="/submit" method="POST">
+    <input type="text" name="activity" placeholder="Your activity">
+</form>
+<div class="container">
+
+    <h2> <%= locals.AllA %> </h2>
+    
+
+
+
+
+
+</div>
+
+
+
+
+
+<%- include("partials/footer.ejs") %>
