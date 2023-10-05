@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            margin: 10px 0;
+        }
+        body{
+            background-color: #f5f5f5;
+        }
+        li{
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+
+
+        }
+        li:hover{
+            background-color: #f5f5f5;
+
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        h1{
+            text-align: center;
+            margin: 20px 0;
+        }
+        h1{
+            color: #000;
+        }
+        .timer{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+        }
+        p{
+            font-size: 20px;
+
+        }
+
+        .animation-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+            .box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .box:hover {
+                transform: scale(1.2);
+            }
+
+            h1:hover{
+                color: #ccc;
+
+            }
+            .timer:hover{
+                background-color: #ccc;
+            }
+            li{
+                transition: background-color 0.3s ease-in-out;
+                text-align: center;
+
+            }
+            li:hover{
+                background-color: #ccc;
+                border: black solid 1px;
+            }
+            .timer:hover{
+                
+                border: black solid 1px;
+                transition: background-color 0.3s ease-in-out;
+
+            }
+
+        </style>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const currentTime = now.toLocaleTimeString();
+                document.getElementById('time').textContent = currentTime;
+            }
+            setInterval(updateTime, 1000);
+            
+            const box = document.querySelector('.box');
+
+            box.addEventListener('click', () => {
+                box.style.backgroundColor = 'green';
+            });
+        </script>
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+            
+            <h1>Front End Excercises</h1>
+            <ul>
+                <li><a href="01_basic_html.html">01_basic_html</a></li>
+                <li><a href="02_basic_css.html">02_basic_css</a></li>
+                <li><a href="03_basic_css.html">03_basic_css</a></li>
+                <li><a href="04_basic_css.html">04_basic_css</a></li>
+                <li><a href="05_basic_css.html">05_basic_css</a></li>
+                <li><a href="06_basic_css.html">06_basic_css</a></li>
+                <li><a href="07_basic_css.html">07_basic_css</a></li>
+                <li><a href="08_basic_css.html">08_basic_css</a></li>
+                <li><a href="09_basic_css.html">09_basic_css</a></li>
+                <li><a href="10_basic_css.html">10_basic_css</a></li>
+                <li><a href="11_basic_css.html">11_basic_css</a></li>
+                <li><a href="12_basic_css.html">12_basic_css</a></li>
+                <li><a href="13_basic_css.html">13_basic_css</a></li>
+                <li><a href="14_basic_css.html">14_basic_css</a></li>
+                <li><a href="15_basic_css.html">15_basic_css</a></li>
+                <li><a href="16_basic_css.html">16_basic_css</a></li>
+                <li><a href="17_basic_css.html">17_basic_css</a></li>
+                <li><a href="18_basic_css.html">18_basic_css</a></li>
+                <li><a href="19_basic_css.html">19_basic_css</a></li>
+                <li><a href="20_basic_css.html">20_basic_css</a></li>
+                <li><a href="21_basic_css.html">21_basic_css</a></li>
+                <li><a href="22_basic_css.html">22_basic_css</a></li>
+                <li><a href="23_basic_css.html">23_basic_css</a></li>
+                <li><a href="24_basic_css.html">24_basic_css</a></li>
+                </ul>
+    </div>
+    <div class="timer">
+        <h1 class="timer_changer">Current Time</h1>
+        <p>The current time is <span id="time"></span>.</p>
+    </div>  
+    <div class="animation-container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
+

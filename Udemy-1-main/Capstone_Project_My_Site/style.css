@@ -1,0 +1,47 @@
+img{
+    border-radius: 50%;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+    margin: 100px;
+
+}
+.resume{
+    display: grid;
+    align-items: center;
+    font-family: sans-serif;
+}
+.me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+.mephoto{
+    height: 300px;
+    width:300px
+}
+hr{
+    border-top: 1px , dashed , green;
+    width: 50%;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+}
+.container{
+    background-color: #8975EB;
+    margin-top: 0%;
+    width: 100%;
+}
+html{
+    font-family: sans-serif;
+    color: #212736;
+}
+footer{
+    padding: 50px 0 20px;
+}

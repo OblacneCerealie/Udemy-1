@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+
+
+
+
+
+
+
+<h1>What are you going to do today?</h1>
+<form action="/submit" method="POST">
+    <input type="text" name="activity" placeholder="Your activity">
+    <button type="submit">Add</button>
+</form>
+<ul class="task-list">
+    <% for (let i = 0; i < locals.activitiesL.length; i++) { %>
+        <li class="task">
+            <span><%= activitiesL[i] %></span>
+        </li>
+    <% } %>
+</ul>
+
+
+
+
+
+<%- include("partials/footer.ejs") %>
