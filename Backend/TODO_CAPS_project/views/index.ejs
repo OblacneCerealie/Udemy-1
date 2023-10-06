@@ -6,6 +6,7 @@
     <button type="submit">Add</button>
 </form>
 <ul class="task-list">
+    <% let activitiesL = [locals.AllA]; %>
     <% for (let i = 0; i < activitiesL.length; i++) { %>
         <li class="task">
             <span><%= activitiesL[i] %></span>
